@@ -1,0 +1,33 @@
+{
+  "name": "lwc-typescript-boilerplate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "LWC Typescript boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c scripts/rollup.config.js"
+  },
+  "keywords": [
+    "typescript",
+    "lwc",
+    "boilerplate"
+  ],
+  "author": "Diego Ferreiro Val",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.2.2",
+    "@babel/plugin-transform-typescript": "~7.4.0",
+    "@lwc/compiler": "0.37.0",
+    "@lwc/engine": "0.37.0",
+    "@lwc/jest-preset": "0.37.0",
+    "@lwc/rollup-plugin": "0.37.0",
+    "@salesforce/eslint-config-lwc": "~0.3.0",
+    "eslint": "~5.11.1",
+    "jest": "~23.6.0",
+    "rollup": "~1.0.0",
+    "rollup-plugin-compat": "0.21.4",
+    "rollup-plugin-replace": "~2.1.1",
+    "rollup-plugin-terser": "~4.0.4"
+  }
+}
