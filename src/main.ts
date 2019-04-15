@@ -9,5 +9,7 @@ function test(dom: Element, str: string) {
 
 // eslint-disable-next-line @lwc/lwc/no-document-query
 const container = document.getElementById("main");
-test(container, "test");
-container.appendChild(app);
+if (container) {
+    test(container, "test");
+    container.appendChild(app);
+}

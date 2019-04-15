@@ -1,5 +1,4 @@
 import { LightningElement, track } from 'lwc';
-
 export default class App extends LightningElement {
-    @track hello: string;
+    @track hello: string = "Hi!";
 }

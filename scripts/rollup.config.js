@@ -23,9 +23,11 @@ const babelOptions = {
 function removeTypesPlugin() {
     return {
         name: 'ts-removal',
-        transform(src) {
-            const { code, map } = transform(src, babelOptions);
-            return { code, map };
+        transform(src, id) {
+            if (path.extname(id) === '.ts') {
+                const { code, map } = transform(src, babelOptions);
+                return { code, map };
+            }
         }
     };
 }
