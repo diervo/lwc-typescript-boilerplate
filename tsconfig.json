@@ -11,15 +11,13 @@
     "lib": ["dom", "es2015", "es2016", "es2017", "es2018"],
     "baseUrl": "./src",
     "paths": {
-      "lwc": ["node_modules/@lwc/engine/dist/modules/es2017/engine.js"],
+      "lwc": ["../node_modules/@lwc/engine/dist/modules/es2017/engine.js"],
+      "lwc/helloWorld": ["lwc/helloWorld/helloWorld.ts"]
     }
   },
   "include": [
-    "src/**/*",
-    "node_modules/@lwc/engine/types"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-]
+    "src/",
+    "node_modules/@lwc/engine/types",
+    "typings",
+  ]
 }
